@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+#container{
+    max-width: 1200px;
+    width: 95%;
+    margin: 40px auto;
+}
+#nav{}
+#nav ul{
+    list-style: none;
+}
+#nav ul::after{
+    content:'';
+    clear: both;
+    display: table;
+}
+#nav>ul>li{
+    float: left;
+    width: 20%;
+    text-align: center;
+    background-color: orange;
+    border: 1px solid gray;
+}
+#nav ul li:first-child{
+    border-radius: 15px 0 0 15px;
+}
+#nav ul li:last-child{
+    border-radius:0 15px 15px 0;
+}
+#nav ul li a{
+    display: block;
+    color: gray;
+    text-decoration: none;
+    padding: 15px 0;
+}
+#nav ul li:hover{
+    background-color: greenyellow;
+    color: white;
+}
+
+#content{
+    color: white;
+    margin-top: 20px;
+}
+#content p{
+    line-height: 1.5;
+    padding: 15px 0;
+}
