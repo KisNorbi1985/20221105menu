@@ -33,7 +33,7 @@ body{
 #nav ul li:last-child{
     border-radius:0 15px 15px 0;
 }
-#nav ul li a{
+#nav>ul>li>a{
     display: block;
     color: gray;
     text-decoration: none;
@@ -52,8 +52,26 @@ body{
     line-height: 1.5;
     padding: 15px 0;
 }
+.has-submenu{
+position: relative;
+}
 .submenu{
     display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+.submenu li{
+}
+.submenu li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+}
+.submenu li a:hover{
+    background-color: lightslategrey;
 }
 .has-submenu:hover .submenu{
     display: block;
